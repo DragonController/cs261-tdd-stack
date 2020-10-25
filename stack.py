@@ -4,12 +4,17 @@
 
 class Stack:
 
+    def __init__(self):
+        self.data = []
+
     def is_empty(self):
-        return True
+        return self.data == []
 
     def pop(self):
         raise IndexError
 
-
     def peek(self):
         raise IndexError
+
+    def push(self, value):
+        self.data.append(value)
