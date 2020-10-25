@@ -92,18 +92,18 @@ class TestStack(unittest.TestCase):
         s.push(second_value)
         self.assertEqual(second_value, s.pop())
 
-    # def test_pop_state(self):
-    #     """
-    #     Popping removes the last pushed value from the stack.
-    #     """
-    #     s = Stack()
-    #     first_value = fake_value()
-    #     second_value = fake_value()
-    #     s.push(first_value)
-    #     s.push(second_value)
-    #     self.assertEqual(second_value, s.pop())
-    #     self.assertEqual(first_value, s.pop())
-    #     self.assertTrue(s.is_empty())
+    def test_pop_state(self):
+        """
+        Popping removes the last pushed value from the stack.
+        """
+        s = Stack()
+        first_value = fake_value()
+        second_value = fake_value()
+        s.push(first_value)
+        s.push(second_value)
+        self.assertEqual(second_value, s.pop())
+        self.assertEqual(first_value, s.pop())
+        self.assertTrue(s.is_empty())
 
 
 def fake_value():
