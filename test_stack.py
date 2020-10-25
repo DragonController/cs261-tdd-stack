@@ -62,14 +62,14 @@ class TestStack(unittest.TestCase):
         s.push('fee')
         self.assertEqual('fee', s.pop())
 
-    # def test_peek_two(self):
-    #     """
-    #     Peeking at a stack with two values returns the last pushed value.
-    #     """
-    #     s = Stack()
-    #     s.push('fee')
-    #     s.push('fi')
-    #     self.assertEqual('fi', s.peek())
+    def test_peek_two(self):
+        """
+        Peeking at a stack with two values returns the last pushed value.
+        """
+        s = Stack()
+        s.push('fee')
+        s.push('fi')
+        self.assertEqual('fi', s.peek())
 
     # def test_peek_state(self):
     #     """
