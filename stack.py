@@ -9,3 +9,7 @@ class Stack:
 
     def pop(self):
         raise IndexError
+
+
+    def peek(self):
+        raise IndexError
