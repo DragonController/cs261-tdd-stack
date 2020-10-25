@@ -81,16 +81,16 @@ class TestStack(unittest.TestCase):
         self.assertEqual('fi', s.peek())
         self.assertEqual('fi', s.peek())
 
-    # def test_pop_two(self):
-    #     """
-    #     Popping from a stack with two values returns the last pushed value.
-    #     """
-    #     s = Stack()
-    #     first_value = fake_value()
-    #     second_value = fake_value()
-    #     s.push(first_value)
-    #     s.push(second_value)
-    #     self.assertEqual(second_value, s.pop())
+    def test_pop_two(self):
+        """
+        Popping from a stack with two values returns the last pushed value.
+        """
+        s = Stack()
+        first_value = fake_value()
+        second_value = fake_value()
+        s.push(first_value)
+        s.push(second_value)
+        self.assertEqual(second_value, s.pop())
 
     # def test_pop_state(self):
     #     """
