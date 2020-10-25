@@ -6,3 +6,6 @@ class Stack:
 
     def is_empty(self):
         return True
+
+    def pop(self):
+        raise IndexError
