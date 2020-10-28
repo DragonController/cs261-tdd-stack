@@ -8,7 +8,7 @@ class Stack:
         self.data = []
 
     def is_empty(self):
-        return self.data == []
+        return len(self.data) == 0
 
     def pop(self):
         return self.data.pop()
